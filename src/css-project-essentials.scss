@@ -1,0 +1,162 @@
+/*!
+    CSS Project Essentials
+    By: Ryan Fitzgerald
+    Repo: https://github.com/RyanFitzgerald/css-project-essentials
+    Issues: https://github.com/RyanFitzgerald/css-project-essentials/issues
+*/
+
+// Import Normalize.css
+@import "normalize";
+
+// --- Define Variables ---
+
+$base-font: 62.5%; // 100% for 16px, 62.5% for 10px
+$cols: 12;
+$medium: 640;
+$large: 1024;
+$extraLarge: 1440; 
+
+// --- Define Global Styles ---
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: $base-font;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+// Define Grid-Related Styles
+
+.row {
+   margin: 0 auto;
+   max-width: 1200px;
+   padding: 0;
+   width: 100%;
+  
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.column {
+  float: left;
+  position: relative;
+  padding: 0 15px;
+  width: 100%;
+}
+
+@for $num from 1 through $cols { // Base grid
+    .sm-#{$num} {
+        width: (100%/($cols/$num));
+    }
+}
+
+// --- Define Basic Helpers ---
+
+.clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.full-width {
+    max-width: 100%;
+}
+
+.sm-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+// --- Define Media Queries ---
+
+@media only screen and (max-width: #{($medium)-1}px) { // Small Only
+    .hide-sm {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: #{$medium}px) { // Medium Up
+    @for $num from 1 through $cols { // Base grid
+        .md-#{$num} {
+            width: (100%/($cols/$num));
+        }
+    }
+
+    .hide-md-up {
+        display: none;
+    }
+
+    .md-center {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}
+
+@media only screen and (min-width: #{$medium}px) and (max-width: #{($large)-1}px) { // Medium Only
+    .hide-md {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: #{$large}px) { // Large Up
+     @for $num from 1 through $cols { // Base grid
+        .lg-#{$num} {
+            width: (100%/($cols/$num));
+        }
+    }
+
+    .hide-lg-up {
+        display: none;
+    }
+
+    .lg-center {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}
+
+@media only screen and (min-width: #{$large}px) and (max-width: #{($extraLarge)-1}px) { // Large Only
+    .hide-lg {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: #{$extraLarge}px) { // Extra Large Up
+     @for $num from 1 through $cols { // Base grid
+        .xl-#{$num} {
+            width: (100%/($cols/$num));
+        }
+    }
+
+    .hide-xl {
+        display: none;
+    }
+
+    .xl-center {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}

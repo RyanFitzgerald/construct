@@ -1,0 +1,14 @@
+{
+  "name": "css-project-essentials",
+  "version": "1.0.0",
+  "description": "Simple CSS setup and grid for minimal bloat",
+  "author": "Ryan Fitzgerald",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-wait": "0.0.2"
+  }
+}

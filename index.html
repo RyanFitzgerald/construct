@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Project Essentials Sample</title>
+    <link rel="stylesheet" href="dist/css-project-essentials.css">
+    <style>
+        h1, h2 {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        .column {
+            background: #eee;
+            font-size: 1.6em;
+        }
+
+        .column:nth-child(odd) {
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+<h1>CSS Essentials Demo</h1>
+<h2>Grid Examples</h2>
+<div class="row">
+    <div class="md-8 lg-6 column">
+        md-8 lg-6 column
+    </div>
+    <div class="md-4 lg-6 column">
+        md-4 lg-6 column
+    </div>
+</div>
+<br/>
+<div class="row">
+    <div class="sm-6 md-4 lg-6 column">
+        sm-6 md-4 lg-6 column
+    </div>
+    <div class="sm-6 md-4 lg-3 column">
+        sm-6 md-4 lg-3 column
+    </div>
+    <div class="md-4 lg-3 column">
+        md-4 lg-3 column
+    </div>
+</div>
+<br/>
+<div class="row">
+    <div class="sm-6 lg-4 sm-center column">
+        sm-6 lg-4 sm-center column
+    </div>
+</div>
+<h2>Helper Examples</h2>
+<div class="row">
+    <div class="md-8 lg-6 hide-sm column">
+        md-8 lg-6 hide-sm column
+    </div>
+    <div class="md-4 lg-6 hide-md column">
+        md-4 lg-6 hide-md column
+    </div>
+</div>
+</body>
+</html>
