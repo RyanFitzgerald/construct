@@ -1,9 +1,3 @@
-/*!
-    CSS Project Essentials
-    By: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/css-project-essentials
-    Issues: https://github.com/RyanFitzgerald/css-project-essentials/issues
-*/
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -441,6 +435,12 @@ template {
   display: none;
 }
 
+/*!
+    CSS Project Essentials
+    By: Ryan Fitzgerald
+    Repo: https://github.com/RyanFitzgerald/css-project-essentials
+    Issues: https://github.com/RyanFitzgerald/css-project-essentials/issues
+*/
 *,
 *:before,
 *:after {
