@@ -435,12 +435,7 @@ template {
   display: none;
 }
 
-/*!
-    CSS Project Essentials
-    By: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/css-project-essentials
-    Issues: https://github.com/RyanFitzgerald/css-project-essentials/issues
-*/
+/*! Basic.css by Ryan Fitzgerald (https://github.com/RyanFitzgerald/basic.css) */
 *,
 *:before,
 *:after {

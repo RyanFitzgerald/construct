@@ -5,7 +5,7 @@ var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('styles', function () {
-    return gulp.src('./src/css-project-essentials.scss')
+    return gulp.src('./src/basic.scss')
         .pipe(wait(250))
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(autoprefixer())
