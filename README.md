@@ -125,7 +125,20 @@ To see it in action, take a look at the "Full Width" section of ```index.html```
 
 Construct comes with a number of helper classes to try and make life a little easier. The helpers currently available are:
 
-[TO DO]
+| Name | Description | Class |
+| ---- | ----------- | ----- |
+| Clearfix | Self-clears it's child elements | .clearfix |
+| Text Center | Centers text within an element | .text-center |
+| Small Center | Centers a column on small size and up | .sm-center |
+| Medium Center | Centers a column on medium size and up | .md-center |
+| Large Center | Centers a column on large size and up | .lg-center |
+| Extra Large Center | Centers a column on extra large size and up | .xl-center |
+| Hide Small | Hides an element only on small sizes | .hide-sm |
+| Hide Medium | Hides an element only on medium sizes | .hide-md |
+| Hide Large | Hides an element only on large sizes | .hide-lg |
+| Hide Extra Large | Hides an element only on extra large sizes | .hide-xl |
+| Hide Medium Up | Hides an element on medium sizes and up | .hide-md-up |
+| Hide Large Up | Hides an element on large sizes and up | .hide-lg-up |
 
 ## Credits
 
