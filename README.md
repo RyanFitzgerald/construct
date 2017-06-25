@@ -2,6 +2,8 @@
 
 Construct is an ultra-simple, Sass-based grid boilerplate system that is mobile first (~7KB Minified). The goal is to only provide the absolute necessities and stay out of your way for the rest. Construct provides style normalization, a simple grid system, and a small number of helper classes to make life a little easier. Construct doesn't make any changes to page colours, fonts (except base size), backgrounds, form elements, or anything of the sort.
 
+![Grid](https://user-images.githubusercontent.com/9112801/27518314-f93f9760-59aa-11e7-9cb1-12cee2b6e41b.png)
+
 ## Installation
 
 Clone this repo or simply pull the compiled CSS file into any project you're working on.
