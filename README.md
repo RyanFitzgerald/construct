@@ -12,6 +12,8 @@ Clone this repo or simply pull the compiled CSS file into any project you're wor
 <link rel="stylesheet" type="text/css" href="path/to/construct.css">
 ```
 
+Alternatively, you can run ```npm install construct-css``` to download it as an npm module.
+
 ## Usage
 
 Construct works in terms of rows and columns, meaning each row has a series of nested columns that indicate their relative widths (more on the grid below). For example, the basic structure is as follows:
