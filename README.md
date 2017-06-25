@@ -25,6 +25,8 @@ Construct works in terms of rows and columns, meaning each row has a series of n
 </div>
 ```
 
+For more extensive examples on how to use the grid, take a look at the ```index.html``` within the project repo.
+
 ## Grid
 
 The grid system works in terms of small, medium, large, and extra large screen sizes (defined within ```_variables.scss```). The grid works mobile-first, meaning if you apply a class at a smaller screen size, it will ripple up to larger screen sizes unless any of the larger screen sizes have their own class applied.
