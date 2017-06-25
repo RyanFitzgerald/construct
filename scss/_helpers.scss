@@ -1,0 +1,73 @@
+// --- Define Basic Helpers ---
+
+.clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.sm-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+@media only screen and (max-width: #{($medium)-1}px) { // Small Only
+    .hide-sm {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: #{$medium}px) { // Medium Up
+    .hide-md-up {
+        display: none;
+    }
+
+    .md-center {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}
+
+@media only screen and (min-width: #{$medium}px) and (max-width: #{($large)-1}px) { // Medium Only
+    .hide-md {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: #{$large}px) { // Large Up
+    .hide-lg-up {
+        display: none;
+    }
+
+    .lg-center {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}
+
+@media only screen and (min-width: #{$large}px) and (max-width: #{($extraLarge)-1}px) { // Large Only
+    .hide-lg {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: #{$extraLarge}px) { // Extra Large Up
+    .hide-xl {
+        display: none;
+    }
+
+    .xl-center {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}

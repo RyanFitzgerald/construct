@@ -1,0 +1,79 @@
+// Define Grid-Related Styles
+
+.row {
+   margin: 0 auto;
+   max-width: $max-width;
+   padding: 0;
+   width: 100%;
+  
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  &.full-width {
+      max-width: 100%;
+  }
+}
+
+.column {
+  float: left;
+  position: relative;
+  padding: 0 $gutter;
+  width: 100%;
+}
+
+@for $num from 1 through $cols { // Base grid
+    .sm-#{$num} {
+        width: (100%/($cols/$num));
+    }
+}
+
+@for $num from 1 through $cols - 1 { // Base grid
+    .sm-offset-#{$num} {
+        margin-left: (100%/($cols/$num));
+    }
+}
+
+@media only screen and (min-width: #{$medium}px) { // Medium Up
+    @for $num from 1 through $cols { // Base grid
+        .md-#{$num} {
+            width: (100%/($cols/$num));
+        }
+    }
+
+    @for $num from 1 through $cols - 1 { // Base grid
+        .md-offset-#{$num} {
+            margin-left: (100%/($cols/$num));
+        }
+    }
+}
+
+@media only screen and (min-width: #{$large}px) { // Large Up
+    @for $num from 1 through $cols { // Base grid
+        .lg-#{$num} {
+            width: (100%/($cols/$num));
+        }
+    }
+
+    @for $num from 1 through $cols - 1 { // Base grid
+        .lg-offset-#{$num} {
+            margin-left: (100%/($cols/$num));
+        }
+    }
+}
+
+@media only screen and (min-width: #{$extraLarge}px) { // Extra Large Up
+    @for $num from 1 through $cols { // Base grid
+        .xl-#{$num} {
+            width: (100%/($cols/$num));
+        }
+    }
+
+    @for $num from 1 through $cols - 1 { // Base grid
+        .xl-offset-#{$num} {
+            margin-left: (100%/($cols/$num));
+        }
+    }
+}

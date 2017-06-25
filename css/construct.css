@@ -1,3 +1,6 @@
+/*! 
+    Construct by Ryan Fitzgerald (https://github.com/RyanFitzgerald/basic.css) 
+*/
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -435,7 +438,6 @@ template {
   display: none;
 }
 
-/*! Basic.css by Ryan Fitzgerald (https://github.com/RyanFitzgerald/basic.css) */
 *,
 *:before,
 *:after {
@@ -469,6 +471,10 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+
+.row.full-width {
+  max-width: 100%;
 }
 
 .column {
@@ -526,26 +532,48 @@ body {
   width: 100%;
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+.sm-offset-1 {
+  margin-left: 8.33333%;
 }
 
-.full-width {
-  max-width: 100%;
+.sm-offset-2 {
+  margin-left: 16.66667%;
 }
 
-.sm-center {
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
+.sm-offset-3 {
+  margin-left: 25%;
 }
 
-@media only screen and (max-width: 639px) {
-  .hide-sm {
-    display: none;
-  }
+.sm-offset-4 {
+  margin-left: 33.33333%;
+}
+
+.sm-offset-5 {
+  margin-left: 41.66667%;
+}
+
+.sm-offset-6 {
+  margin-left: 50%;
+}
+
+.sm-offset-7 {
+  margin-left: 58.33333%;
+}
+
+.sm-offset-8 {
+  margin-left: 66.66667%;
+}
+
+.sm-offset-9 {
+  margin-left: 75%;
+}
+
+.sm-offset-10 {
+  margin-left: 83.33333%;
+}
+
+.sm-offset-11 {
+  margin-left: 91.66667%;
 }
 
 @media only screen and (min-width: 640px) {
@@ -585,19 +613,38 @@ body {
   .md-12 {
     width: 100%;
   }
-  .hide-md-up {
-    display: none;
+  .md-offset-1 {
+    margin-left: 8.33333%;
   }
-  .md-center {
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
+  .md-offset-2 {
+    margin-left: 16.66667%;
   }
-}
-
-@media only screen and (min-width: 640px) and (max-width: 1023px) {
-  .hide-md {
-    display: none;
+  .md-offset-3 {
+    margin-left: 25%;
+  }
+  .md-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .md-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .md-offset-6 {
+    margin-left: 50%;
+  }
+  .md-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .md-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .md-offset-9 {
+    margin-left: 75%;
+  }
+  .md-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .md-offset-11 {
+    margin-left: 91.66667%;
   }
 }
 
@@ -638,19 +685,38 @@ body {
   .lg-12 {
     width: 100%;
   }
-  .hide-lg-up {
-    display: none;
+  .lg-offset-1 {
+    margin-left: 8.33333%;
   }
-  .lg-center {
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
+  .lg-offset-2 {
+    margin-left: 16.66667%;
   }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {
-  .hide-lg {
-    display: none;
+  .lg-offset-3 {
+    margin-left: 25%;
+  }
+  .lg-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .lg-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .lg-offset-6 {
+    margin-left: 50%;
+  }
+  .lg-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .lg-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .lg-offset-9 {
+    margin-left: 75%;
+  }
+  .lg-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .lg-offset-11 {
+    margin-left: 91.66667%;
   }
 }
 
@@ -691,6 +757,98 @@ body {
   .xl-12 {
     width: 100%;
   }
+  .xl-offset-1 {
+    margin-left: 8.33333%;
+  }
+  .xl-offset-2 {
+    margin-left: 16.66667%;
+  }
+  .xl-offset-3 {
+    margin-left: 25%;
+  }
+  .xl-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .xl-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .xl-offset-6 {
+    margin-left: 50%;
+  }
+  .xl-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .xl-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .xl-offset-9 {
+    margin-left: 75%;
+  }
+  .xl-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .xl-offset-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sm-center {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+@media only screen and (max-width: 639px) {
+  .hide-sm {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .hide-md-up {
+    display: none;
+  }
+  .md-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+  .hide-md {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hide-lg-up {
+    display: none;
+  }
+  .lg-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .hide-lg {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
   .hide-xl {
     display: none;
   }

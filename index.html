@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Basic.css Sample</title>
-    <link rel="stylesheet" href="dist/basic.css">
+    <title>Construct</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/construct.css">
     <style>
+        body {
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            color: #333;
+            padding: 50px 0;
+        }
+
         h1, h2 {
             text-align: center;
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
+            padding-bottom: 50px;
         }
 
         h2 {
             font-size: 2em;
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            padding: 15px 0;
+            background: #eee;
+        }
+
+        .row {
+            font-size: 15px;
         }
 
         .column {
             background: #eee;
-            font-size: 1.6em;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
 
         .column:nth-child(odd) {
@@ -27,14 +44,20 @@
     </style>
 </head>
 <body>
-<h1>CSS Essentials Demo</h1>
-<h2>Grid Examples</h2>
+<h1>Construct Demo</h1>
+<h2>Basic Grid</h2>
 <div class="row">
     <div class="md-8 lg-6 column">
         md-8 lg-6 column
     </div>
     <div class="md-4 lg-6 column">
         md-4 lg-6 column
+    </div>
+</div>
+<br/>
+<div class="row">
+    <div class="column">
+        column
     </div>
 </div>
 <br/>
@@ -50,18 +73,55 @@
     </div>
 </div>
 <br/>
-<div class="row full-width">
-    <div class="md-8 lg-6 column">
-        md-8 lg-6 column
+<div class="row">
+    <div class="sm-6 lg-4 sm-center column">
+        sm-6 lg-4 sm-center column
     </div>
-    <div class="md-4 lg-6 column">
-        md-4 lg-6 column
+</div>
+<h2>Nested Grid</h2>
+<div class="row">
+    <div class="md-6 column">
+        md-6 column
+    </div>
+    <div class="md-6 column">
+        <div class="row">
+            <div class="md-8 column">
+                md-8 column
+            </div>
+            <div class="md-4 column">
+                md-4 column
+            </div>
+        </div>
+    </div>
+</div>
+<h2>Offsets</h2>
+<div class="row">
+    <div class="sm-4 column">
+        sm-4 column
+    </div>
+    <div class="sm-4 sm-offset-4 column">
+        sm-4 sm-offset-4 column
     </div>
 </div>
 <br/>
 <div class="row">
-    <div class="sm-6 lg-4 sm-center column">
-        sm-6 lg-4 sm-center column
+    <div class="md-6 column">
+        md-6 column
+    </div>
+    <div class="md-4 md-offset-2 column">
+        md-4 md-offset-2 column
+    </div>
+</div>
+<h2>Full Width</h2>
+<div class="row full-width">
+    <div class="sm-6 md-4 lg-6 column">
+        sm-6 md-4 lg-6 column
+    </div>
+    <div class="sm-6 md-4 lg-3 column">
+        sm-6 md-4 lg-3 column
+    </div>
+    <div class="md-4 lg-3 column">
+        md-4 lg-3 column
     </div>
 </div>
 <h2>Helper Examples</h2>
@@ -71,6 +131,21 @@
     </div>
     <div class="md-4 lg-6 hide-md column">
         md-4 lg-6 hide-md column
+    </div>
+</div>
+<br/>
+<div class="row">
+    <div class="column text-center">
+        column text-center
+    </div>
+</div>
+<br/>
+<div class="row">
+    <div class="md-8 lg-6 hide-lg column">
+        md-8 lg-6 hide-lg column
+    </div>
+    <div class="md-4 lg-6 hide-md-up column">
+        md-4 lg-6 hide-md-up column
     </div>
 </div>
 </body>
