@@ -103,6 +103,8 @@ The above example has 2 columns, both 4 wide, however the second column offsets 
 
 To see it in action, take a look at the "Offsets" section of ```index.html```.
 
+### Column Ordering
+
 ### Full-Width Rows
 
 If you don't want a row to be capped by the max-width for whatever reason, you can simply add a ```.full-width``` class to the row to make it fill the width of the viewport. For example:
@@ -141,6 +143,7 @@ Construct comes with a number of helper classes to try and make life a little ea
 | Hide Extra Large | Hides an element only on extra large sizes | .hide-xl |
 | Hide Medium Up | Hides an element on medium sizes and up | .hide-md-up |
 | Hide Large Up | Hides an element on large sizes and up | .hide-lg-up |
+| No Print | Hides an element on print | .no-print |
 
 ## Credits
 

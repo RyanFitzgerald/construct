@@ -1,5 +1,5 @@
 /*! 
-    Construct by Ryan Fitzgerald (https://github.com/RyanFitzgerald/basic.css) 
+    Construct by Ryan Fitzgerald (https://github.com/RyanFitzgerald/construct) 
 */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -115,7 +115,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -488,48 +489,144 @@ body {
   width: 8.33333%;
 }
 
+.sm-push-1 {
+  left: 8.33333%;
+}
+
+.sm-pull-1 {
+  right: 8.33333%;
+}
+
 .sm-2 {
   width: 16.66667%;
+}
+
+.sm-push-2 {
+  left: 16.66667%;
+}
+
+.sm-pull-2 {
+  right: 16.66667%;
 }
 
 .sm-3 {
   width: 25%;
 }
 
+.sm-push-3 {
+  left: 25%;
+}
+
+.sm-pull-3 {
+  right: 25%;
+}
+
 .sm-4 {
   width: 33.33333%;
+}
+
+.sm-push-4 {
+  left: 33.33333%;
+}
+
+.sm-pull-4 {
+  right: 33.33333%;
 }
 
 .sm-5 {
   width: 41.66667%;
 }
 
+.sm-push-5 {
+  left: 41.66667%;
+}
+
+.sm-pull-5 {
+  right: 41.66667%;
+}
+
 .sm-6 {
   width: 50%;
+}
+
+.sm-push-6 {
+  left: 50%;
+}
+
+.sm-pull-6 {
+  right: 50%;
 }
 
 .sm-7 {
   width: 58.33333%;
 }
 
+.sm-push-7 {
+  left: 58.33333%;
+}
+
+.sm-pull-7 {
+  right: 58.33333%;
+}
+
 .sm-8 {
   width: 66.66667%;
+}
+
+.sm-push-8 {
+  left: 66.66667%;
+}
+
+.sm-pull-8 {
+  right: 66.66667%;
 }
 
 .sm-9 {
   width: 75%;
 }
 
+.sm-push-9 {
+  left: 75%;
+}
+
+.sm-pull-9 {
+  right: 75%;
+}
+
 .sm-10 {
   width: 83.33333%;
+}
+
+.sm-push-10 {
+  left: 83.33333%;
+}
+
+.sm-pull-10 {
+  right: 83.33333%;
 }
 
 .sm-11 {
   width: 91.66667%;
 }
 
+.sm-push-11 {
+  left: 91.66667%;
+}
+
+.sm-pull-11 {
+  right: 91.66667%;
+}
+
 .sm-12 {
   width: 100%;
+}
+
+.sm-push-12 {
+  left: 100%;
+}
+
+.sm-pull-12 {
+  right: 100%;
 }
 
 .sm-offset-1 {
@@ -580,38 +677,110 @@ body {
   .md-1 {
     width: 8.33333%;
   }
+  .md-push-1 {
+    left: 8.33333%;
+  }
+  .md-pull-1 {
+    right: 8.33333%;
+  }
   .md-2 {
     width: 16.66667%;
+  }
+  .md-push-2 {
+    left: 16.66667%;
+  }
+  .md-pull-2 {
+    right: 16.66667%;
   }
   .md-3 {
     width: 25%;
   }
+  .md-push-3 {
+    left: 25%;
+  }
+  .md-pull-3 {
+    right: 25%;
+  }
   .md-4 {
     width: 33.33333%;
+  }
+  .md-push-4 {
+    left: 33.33333%;
+  }
+  .md-pull-4 {
+    right: 33.33333%;
   }
   .md-5 {
     width: 41.66667%;
   }
+  .md-push-5 {
+    left: 41.66667%;
+  }
+  .md-pull-5 {
+    right: 41.66667%;
+  }
   .md-6 {
     width: 50%;
+  }
+  .md-push-6 {
+    left: 50%;
+  }
+  .md-pull-6 {
+    right: 50%;
   }
   .md-7 {
     width: 58.33333%;
   }
+  .md-push-7 {
+    left: 58.33333%;
+  }
+  .md-pull-7 {
+    right: 58.33333%;
+  }
   .md-8 {
     width: 66.66667%;
+  }
+  .md-push-8 {
+    left: 66.66667%;
+  }
+  .md-pull-8 {
+    right: 66.66667%;
   }
   .md-9 {
     width: 75%;
   }
+  .md-push-9 {
+    left: 75%;
+  }
+  .md-pull-9 {
+    right: 75%;
+  }
   .md-10 {
     width: 83.33333%;
+  }
+  .md-push-10 {
+    left: 83.33333%;
+  }
+  .md-pull-10 {
+    right: 83.33333%;
   }
   .md-11 {
     width: 91.66667%;
   }
+  .md-push-11 {
+    left: 91.66667%;
+  }
+  .md-pull-11 {
+    right: 91.66667%;
+  }
   .md-12 {
     width: 100%;
+  }
+  .md-push-12 {
+    left: 100%;
+  }
+  .md-pull-12 {
+    right: 100%;
   }
   .md-offset-1 {
     margin-left: 8.33333%;
@@ -652,38 +821,110 @@ body {
   .lg-1 {
     width: 8.33333%;
   }
+  .lg-push-1 {
+    left: 8.33333%;
+  }
+  .lg-pull-1 {
+    right: 8.33333%;
+  }
   .lg-2 {
     width: 16.66667%;
+  }
+  .lg-push-2 {
+    left: 16.66667%;
+  }
+  .lg-pull-2 {
+    right: 16.66667%;
   }
   .lg-3 {
     width: 25%;
   }
+  .lg-push-3 {
+    left: 25%;
+  }
+  .lg-pull-3 {
+    right: 25%;
+  }
   .lg-4 {
     width: 33.33333%;
+  }
+  .lg-push-4 {
+    left: 33.33333%;
+  }
+  .lg-pull-4 {
+    right: 33.33333%;
   }
   .lg-5 {
     width: 41.66667%;
   }
+  .lg-push-5 {
+    left: 41.66667%;
+  }
+  .lg-pull-5 {
+    right: 41.66667%;
+  }
   .lg-6 {
     width: 50%;
+  }
+  .lg-push-6 {
+    left: 50%;
+  }
+  .lg-pull-6 {
+    right: 50%;
   }
   .lg-7 {
     width: 58.33333%;
   }
+  .lg-push-7 {
+    left: 58.33333%;
+  }
+  .lg-pull-7 {
+    right: 58.33333%;
+  }
   .lg-8 {
     width: 66.66667%;
+  }
+  .lg-push-8 {
+    left: 66.66667%;
+  }
+  .lg-pull-8 {
+    right: 66.66667%;
   }
   .lg-9 {
     width: 75%;
   }
+  .lg-push-9 {
+    left: 75%;
+  }
+  .lg-pull-9 {
+    right: 75%;
+  }
   .lg-10 {
     width: 83.33333%;
+  }
+  .lg-push-10 {
+    left: 83.33333%;
+  }
+  .lg-pull-10 {
+    right: 83.33333%;
   }
   .lg-11 {
     width: 91.66667%;
   }
+  .lg-push-11 {
+    left: 91.66667%;
+  }
+  .lg-pull-11 {
+    right: 91.66667%;
+  }
   .lg-12 {
     width: 100%;
+  }
+  .lg-push-12 {
+    left: 100%;
+  }
+  .lg-pull-12 {
+    right: 100%;
   }
   .lg-offset-1 {
     margin-left: 8.33333%;
@@ -724,38 +965,110 @@ body {
   .xl-1 {
     width: 8.33333%;
   }
+  .xl-push-1 {
+    left: 8.33333%;
+  }
+  .xl-pull-1 {
+    right: 8.33333%;
+  }
   .xl-2 {
     width: 16.66667%;
+  }
+  .xl-push-2 {
+    left: 16.66667%;
+  }
+  .xl-pull-2 {
+    right: 16.66667%;
   }
   .xl-3 {
     width: 25%;
   }
+  .xl-push-3 {
+    left: 25%;
+  }
+  .xl-pull-3 {
+    right: 25%;
+  }
   .xl-4 {
     width: 33.33333%;
+  }
+  .xl-push-4 {
+    left: 33.33333%;
+  }
+  .xl-pull-4 {
+    right: 33.33333%;
   }
   .xl-5 {
     width: 41.66667%;
   }
+  .xl-push-5 {
+    left: 41.66667%;
+  }
+  .xl-pull-5 {
+    right: 41.66667%;
+  }
   .xl-6 {
     width: 50%;
+  }
+  .xl-push-6 {
+    left: 50%;
+  }
+  .xl-pull-6 {
+    right: 50%;
   }
   .xl-7 {
     width: 58.33333%;
   }
+  .xl-push-7 {
+    left: 58.33333%;
+  }
+  .xl-pull-7 {
+    right: 58.33333%;
+  }
   .xl-8 {
     width: 66.66667%;
+  }
+  .xl-push-8 {
+    left: 66.66667%;
+  }
+  .xl-pull-8 {
+    right: 66.66667%;
   }
   .xl-9 {
     width: 75%;
   }
+  .xl-push-9 {
+    left: 75%;
+  }
+  .xl-pull-9 {
+    right: 75%;
+  }
   .xl-10 {
     width: 83.33333%;
+  }
+  .xl-push-10 {
+    left: 83.33333%;
+  }
+  .xl-pull-10 {
+    right: 83.33333%;
   }
   .xl-11 {
     width: 91.66667%;
   }
+  .xl-push-11 {
+    left: 91.66667%;
+  }
+  .xl-pull-11 {
+    right: 91.66667%;
+  }
   .xl-12 {
     width: 100%;
+  }
+  .xl-push-12 {
+    left: 100%;
+  }
+  .xl-pull-12 {
+    right: 100%;
   }
   .xl-offset-1 {
     margin-left: 8.33333%;

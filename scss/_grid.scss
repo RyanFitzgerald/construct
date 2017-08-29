@@ -28,6 +28,14 @@
     .sm-#{$num} {
         width: (100%/($cols/$num));
     }
+
+    .sm-push-#{$num} {
+        left: (100%/($cols/$num));
+    }
+
+    .sm-pull-#{$num} {
+        right: (100%/($cols/$num));
+    }
 }
 
 @for $num from 1 through $cols - 1 { // Base grid
@@ -40,6 +48,14 @@
     @for $num from 1 through $cols { // Base grid
         .md-#{$num} {
             width: (100%/($cols/$num));
+        }
+
+        .md-push-#{$num} {
+            left: (100%/($cols/$num));
+        }
+    
+        .md-pull-#{$num} {
+            right: (100%/($cols/$num));
         }
     }
 
@@ -55,6 +71,14 @@
         .lg-#{$num} {
             width: (100%/($cols/$num));
         }
+
+        .lg-push-#{$num} {
+            left: (100%/($cols/$num));
+        }
+    
+        .lg-pull-#{$num} {
+            right: (100%/($cols/$num));
+        }
     }
 
     @for $num from 1 through $cols - 1 { // Base grid
@@ -68,6 +92,14 @@
     @for $num from 1 through $cols { // Base grid
         .xl-#{$num} {
             width: (100%/($cols/$num));
+        }
+
+        .xl-push-#{$num} {
+            left: (100%/($cols/$num));
+        }
+    
+        .xl-pull-#{$num} {
+            right: (100%/($cols/$num));
         }
     }
 

@@ -1,7 +1,17 @@
 {
   "name": "construct-css",
   "version": "1.0.0",
-  "description": "Simple CSS setup and grid for minimal bloat",
+  "description": "Ultra-simple, Sass-based grid boilerplate system that is mobile first",
+  "keywords": [
+    "css",
+    "boilerplate",
+    "grid",
+    "responsive",
+    "sass"
+  ],
+  "main": "css/construct.css",
+  "repository": "https://github.com/RyanFitzgerald/construct",
+  "bugs": "https://github.com/RyanFitzgerald/construct/issues",
   "author": "Ryan Fitzgerald",
   "license": "MIT",
   "devDependencies": {
