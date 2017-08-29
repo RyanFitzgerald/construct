@@ -105,6 +105,21 @@ To see it in action, take a look at the "Offsets" section of ```index.html```.
 
 ### Column Ordering
 
+You can change the order of columns by utilizing ```SIZE-push-NUM & SIZE-pull-NUM```. For example:
+
+```html
+<div class="row">
+    <div class="sm-4 md-push-8 column">
+        sm-4 md-push-8 column
+    </div>
+    <div class="sm-8 md-pull-4 column">
+        sm-8 md-pull-4 column
+    </div>
+</div>
+```
+
+On small screens, the order will be the 4-col and then the 8-col, however once you hit a medium screen and up, the order will be the 8-col and then the 4-col. In order to use push/pull, you must use push on the first column in the amount of the second column and pull on the second column in the amount of the first column.
+
 ### Full-Width Rows
 
 If you don't want a row to be capped by the max-width for whatever reason, you can simply add a ```.full-width``` class to the row to make it fill the width of the viewport. For example:
